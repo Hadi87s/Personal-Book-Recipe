@@ -9,7 +9,7 @@ const RecipeForm = () => {
   const [instructions, setInstructions] = useState<string[]>([]);
   const ingredientItem = useRef<HTMLInputElement>(null);
   const instructionItem = useRef<HTMLInputElement>(null);
-  const { recipes, setRecipes } = useContext(RecipesContext);
+  const { setRecipes } = useContext(RecipesContext);
   const handleAddingIngredient = (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
@@ -31,7 +31,7 @@ const RecipeForm = () => {
         instructionItem.current?.value!,
       ]);
     }
-  };
+  }; // you can use one function for this as well, well do it when I refactor the code :)
 
   const handleRecipeSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
