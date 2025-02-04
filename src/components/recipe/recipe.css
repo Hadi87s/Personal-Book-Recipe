@@ -1,16 +1,26 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     background-color: #f1f1f1;
     border-radius: 10px;
-    width: 200px;
+    width: 227px;
     color: #111;
 }
 
 .card .name {
     font-weight: bold;
+    font-size: 24px;
 } 
+.card .name a{
+    text-decoration: none;
+    color: #111;
+    transition: color 120ms ease-in;
+}
+
+.card .name a:hover {
+     color: orange;
+}
 
 .card .desc {
     color: #666;
@@ -19,4 +29,5 @@
     max-width: 100%;
     height: auto;
     aspect-ratio: 1 /1;
+    border-radius: 10px;
 }
