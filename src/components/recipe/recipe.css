@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    width: 200px;
+    color: #111;
+}
+
+.card .name {
+    font-weight: bold;
+} 
+
+.card .desc {
+    color: #666;
+} 
+.card img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 /1;
+}
