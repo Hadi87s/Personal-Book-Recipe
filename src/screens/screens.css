@@ -18,12 +18,14 @@
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
+    font-family: "Fredoka";
 }
 
 .category select {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;  
+    font-family: "Fredoka";
 }
 
 .image img {
