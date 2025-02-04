@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IRecipe } from "../../@Types";
 import "./recipe.css";
 interface IProps {
@@ -10,7 +11,9 @@ const Recipe = ({ recipe }: IProps) => {
       <div className="image">
         <img src={recipe.image} alt="" />
       </div>
-      <div className="name">{recipe.name}</div>
+      <div className="name">
+        <Link to={`/recipe/${recipe.name}`}>{recipe.name}</Link>
+      </div>
       <div className="desc">{recipe.description}</div>
     </div>
   );
