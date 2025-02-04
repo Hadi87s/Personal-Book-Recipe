@@ -1,4 +1,12 @@
-.Recipeform{
+input,button {
+    border-radius: 7px;
+    border: 1px solid #f1f1f1;
+}
+
+button{
+    cursor: pointer;
+}
+.Recipe-form{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -6,7 +14,7 @@
     margin: 0 auto;
 }
 
-.Recipeform input {
+.Recipe-form input {
     padding: 10px;
 }
 
@@ -21,11 +29,24 @@
 }
 
 .itemsList {
-text-align: start;
+    text-align: start;
+    list-style: none;
+    padding: 0;
+
+    margin: 5px 0;
 }
 .itemsList li {
     padding: 5px;
     background-color: rgb(27, 27, 27);
     border-radius: 5px;
     margin-bottom: 4px;
+}
+
+.category{
+    display:flex;
+}
+
+#cat {
+    padding: 10px;
+    flex: 1;
 }

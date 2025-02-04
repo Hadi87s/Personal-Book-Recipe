@@ -16,7 +16,7 @@ const Recipes = () => {
     if (search) {
       setFilteredRecipes(
         recipes.filter((recipe) =>
-          recipe.name.toLowerCase().includes(search.toLowerCase())
+          recipe.title.toLowerCase().includes(search.toLowerCase())
         )
       );
     } else if (cat) {

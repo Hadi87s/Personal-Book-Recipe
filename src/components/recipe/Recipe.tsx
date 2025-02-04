@@ -12,7 +12,7 @@ const Recipe = ({ recipe }: IProps) => {
         <img src={recipe.image} alt="" />
       </div>
       <div className="name">
-        <Link to={`/recipe/${recipe.id}`}>{recipe.name}</Link>
+        <Link to={`/recipe/${recipe.id}`}>{recipe.title}</Link>
       </div>
       <div className="desc">{recipe.description}</div>
     </div>

@@ -1,9 +1,11 @@
 export interface IRecipe {
   id: string;
-  name: string;
+  title: string;
   image: string;
   description: string;
   category: ECategory;
+  ingredients: string[];
+  instructions: string[];
 }
 
 export enum ECategory {
