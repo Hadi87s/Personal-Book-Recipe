@@ -6,3 +6,10 @@
     gap: 10px;
     flex-wrap: wrap; */
 }
+
+.filter{
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 10px;
+}

@@ -1,5 +1,5 @@
 import { nanoid } from "nanoid";
-import React, { ReactNode, createContext, useState } from "react";
+import React, { createContext, useState } from "react";
 import { IRecipe } from "../@Types";
 
 interface IContext {
@@ -67,7 +67,7 @@ const RecipesProvider = ({ children }: IContext) => {
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
     },
-  ]);
+  ]); // create a preservable custom hook to save this state to local storage on each change.
 
   const value = { recipes, setRecipes };
   return (
