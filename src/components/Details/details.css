@@ -1,0 +1,46 @@
+.holder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero{
+    display: flex;
+    padding: 10px;
+}
+
+.hero .recipe-image{
+    height: 300px;
+}
+
+.hero .recipe-image img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.hero .title{
+    padding: 10px;
+}
+
+.hero .title h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: #f0f0f0;
+}
+.hero .title p {
+    color: #bcbcbc;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+}
