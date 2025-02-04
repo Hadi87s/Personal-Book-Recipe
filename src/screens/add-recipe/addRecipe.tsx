@@ -1,7 +1,11 @@
-import React from "react";
+import RecipeForm from "../../components/RecipeForm/RecipeForm";
 
 const AddRecipe = () => {
-  return <div>Add Recipe Page</div>;
+  return (
+    <div>
+      <RecipeForm />
+    </div>
+  );
 };
 
 export default AddRecipe;

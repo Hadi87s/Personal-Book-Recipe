@@ -1,0 +1,31 @@
+.Recipeform{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.Recipeform input {
+    padding: 10px;
+}
+
+.ingredients{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.ingredients input,button {
+    flex-grow: 1;
+}
+
+.itemsList {
+text-align: start;
+}
+.itemsList li {
+    padding: 5px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 5px;
+    margin-bottom: 4px;
+}

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import Recipe from "../../components/recipe/Recipe";
+import Recipe from "../../components/Recipe/Recipe";
 import "../screens.css";
 import { RecipesContext } from "../../providers/recipesProvider";
 import { useSearchParams } from "react-router-dom";

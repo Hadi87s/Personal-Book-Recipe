@@ -25,3 +25,10 @@
     border-radius: 5px;
     border: 1px solid #f1f1f1;  
 }
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/ 9;
+    background-attachment: fixed;
+}
