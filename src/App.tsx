@@ -7,6 +7,7 @@ import RecipeDetails from "./screens/recipe-details/RecipeDetails";
 import AddRecipe from "./screens/add-recipe/addRecipe";
 import Login from "./screens/login/login";
 import NotFound from "./screens/not-found/NotFound";
+import RecipesProvider from "./providers/recipesProvider";
 
 const router = createBrowserRouter([
   {
@@ -52,7 +53,9 @@ function NavbarLayout() {
 }
 
 function App() {
-  return <RouterProvider router={router} />;
+  return <RecipesProvider>
+    <RouterProvider router={router} />
+  </RecipesProvider>;
 }
 
 export default App;
