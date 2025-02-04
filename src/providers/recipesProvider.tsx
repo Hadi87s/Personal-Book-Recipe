@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 import React, { createContext, useState } from "react";
-import { IRecipe } from "../@Types";
+import { ECategory, IRecipe } from "../@Types";
 
 interface IContext {
   children: React.ReactNode;
@@ -18,56 +18,65 @@ const RecipesProvider = ({ children }: IContext) => {
       name: "Chicken Biryani",
       image: "../../../public/recipe1.jpg",
       description: "its very tasteful and I love it so much!",
+      category: ECategory.BREAK_FAST,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.DESSERT,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.DESSERT,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.BREAK_FAST,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.LUNCH,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.LUNCH,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.DINNER,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.LUNCH,
     },
     {
       id: nanoid(),
       name: "Chicken Serrano",
       image: "../../../public/recipe2.jpg",
       description: "its very delicious and I love it.",
+      category: ECategory.LUNCH,
     },
-  ]); // create a preservable custom hook to save this state to local storage on each change.
+  ]);
 
   const value = { recipes, setRecipes };
   return (
