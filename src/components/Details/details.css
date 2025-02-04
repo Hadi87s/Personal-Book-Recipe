@@ -11,34 +11,45 @@
 }
 
 .hero .recipe-image{
-    height: 300px;
     position: relative;
-    box-shadow: 3px 3px 10px -5px #f1f1f1;
     border-radius: 10px;
+}
 
+.hero .recipe-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 99%;
+    width: 75%;
+    background-image: linear-gradient(to top, black,rgba(5, 5, 5, 0.526), transparent);
+    border-radius: 10px;
 }
 
 .cat{
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgb(198, 114, 114);
-    border: 1px solid red;
+    background-color: rgba(255, 166, 0, 0.511);
+    border: 1px solid orange;
     padding: 3px 7px;
     border-radius: 15px;
     font-size: 14px;
 }
 
 .hero .recipe-image img {
-    width: 400px;
-    height: 300px;
+    max-width: 75%;
+    height: auto;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
     border-radius: 10px;
 }
 
 .hero .title{
-    padding: 10px;
+    padding: 20px 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
 }
 
 .hero .title h1 {
@@ -48,6 +59,7 @@
 }
 .hero .title p {
     color: #bcbcbc;
+    margin: 0;
 }
 
 .lists{

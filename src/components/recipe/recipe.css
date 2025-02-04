@@ -6,6 +6,7 @@
     border-radius: 10px;
     width: 227px;
     color: #111;
+
 }
 
 .card .name {
@@ -25,10 +26,16 @@
 .card .desc {
     color: #666;
 } 
+/* .card .image {
+    position: absolute;
+    left: 50%;
+    transform: translateX( -50%);
+    text-align: center;
+} */
 .card img {
     max-width: 100%;
     height: auto;
     aspect-ratio: 1 /1;
-    border-radius: 10px;
+    border-radius: 15px;
     object-fit: cover;
 }
