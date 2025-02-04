@@ -1,0 +1,22 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.navList{
+    display: flex;
+    column-gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a, nav div {
+    text-decoration: none;
+    color: #111;
+}
