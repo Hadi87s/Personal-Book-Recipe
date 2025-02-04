@@ -86,7 +86,10 @@ const INITIAL_LIST: IRecipe[] = [
   },
 ];
 
-export function usePersistentState() {
+export function usePersistentState(): [
+  IRecipe[],
+  React.Dispatch<React.SetStateAction<IRecipe[]>>
+] {
   const [recipes, setRecipes] = useState<IRecipe[]>(() => {
     const data = localStorage.getItem("recipes");
     if (!data) {

@@ -50,7 +50,7 @@ const RecipeForm = () => {
       ingredients,
       instructions,
     };
-    setRecipes((oldValue) => [...oldValue, recipe]);
+    setRecipes((oldValue: IRecipe[]) => [...oldValue, recipe]);
   };
 
   return (

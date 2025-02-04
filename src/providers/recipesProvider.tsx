@@ -7,8 +7,8 @@ interface IContext {
 }
 
 export const RecipesContext = createContext<{
-  recipes: IRecipe[] | React.Dispatch<React.SetStateAction<IRecipe[]>>;
-  setRecipes: IRecipe[] | React.Dispatch<React.SetStateAction<IRecipe[]>>;
+  recipes: IRecipe[];
+  setRecipes: React.Dispatch<React.SetStateAction<IRecipe[]>>;
 }>({ recipes: [], setRecipes: () => {} });
 
 const RecipesProvider = ({ children }: IContext) => {
