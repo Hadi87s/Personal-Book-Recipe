@@ -1,16 +1,13 @@
-import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const RecipeDetails = () => {
-  const { name } = useParams();
-  const location = useLocation();
-  console.log(name);
-  console.log(location.pathname);
+  const { id } = useParams();
 
   return (
     <div>
       RecipeDetails
-      {name}
+      <br />
+      {id}
     </div>
   );
 };

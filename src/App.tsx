@@ -6,6 +6,7 @@ import Recipes from "./screens/recipes/Recipes";
 import RecipeDetails from "./screens/recipe-details/RecipeDetails";
 import AddRecipe from "./screens/add-recipe/addRecipe";
 import Login from "./screens/login/login";
+import NotFound from "./screens/not-found/NotFound";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
