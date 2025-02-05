@@ -1,10 +1,9 @@
 .recipeContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px ,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
-    /* display: flex;
-    gap: 10px;
-    flex-wrap: wrap; */
+     justify-content: center;
+    padding: 10px; 
 }
 
 .filter{
@@ -14,19 +13,19 @@
     gap: 10px;
 }
 
-.search input {
+/* .search input {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;
     font-family: "Fredoka";
-}
+} */
 
-.category select {
+/* .category select {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #f1f1f1;  
     font-family: "Fredoka";
-}
+} */
 
 .image img {
     max-width: 100%;

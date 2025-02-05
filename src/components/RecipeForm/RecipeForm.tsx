@@ -118,7 +118,23 @@ const RecipeForm = () => {
           variant="outlined"
           fullWidth
           required
-          sx={whiteStyle}
+          sx={{
+            color: "white",
+            borderColor: "white",
+            ".MuiOutlinedInput-notchedOutline": {
+              borderColor: "white",
+            },
+            "&:hover .MuiOutlinedInput-notchedOutline": {
+              borderColor: "white",
+            },
+            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+              borderColor: "white",
+            },
+            // Customizing the arrow icon color
+            "& .MuiSelect-icon": {
+              color: "white", // Change the arrow color to white
+            },
+          }}
           MenuProps={{
             PaperProps: {
               sx: {

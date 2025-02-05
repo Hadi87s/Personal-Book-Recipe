@@ -4,6 +4,15 @@ import "../screens.css";
 import { RecipesContext } from "../../providers/recipesProvider";
 import { useSearchParams } from "react-router-dom";
 import { ECategory, IRecipe } from "../../@Types";
+import { motion } from "framer-motion";
+import {
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  SelectChangeEvent,
+  TextField,
+} from "@mui/material";
 
 const Recipes = () => {
   const { recipes } = useContext(RecipesContext);
@@ -36,8 +45,9 @@ const Recipes = () => {
     setParams(params);
   };
 
-  const handleCategoryFilter = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleCategoryFilter = (e: SelectChangeEvent<string>) => {
     const query = e.target.value;
+    console.log(query);
 
     if (query) {
       params.set("cat", query);
@@ -48,31 +58,76 @@ const Recipes = () => {
   }; // refactor those two functions into one :)
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="min-h-screen bg-gray-900 text-white"
+    >
       <div className="filter">
-        <div className="search">
-          <input
-            type="text"
-            //value={params.get("search") as string} // making this field controlled
-            onChange={handleSearchFilter}
-          />
-        </div>
-        <div className="category">
-          <select name="" id="" onChange={handleCategoryFilter}>
-            <option value="">All</option>
-            <option value={ECategory.BREAK_FAST}>Breakfast</option>
-            <option value={ECategory.LUNCH}>Lunch</option>
-            <option value={ECategory.DINNER}>Dinner</option>
-            <option value={ECategory.DESSERT}>Dessert</option>
-          </select>
-        </div>
+        <TextField
+          type="text"
+          label="Search"
+          variant="outlined"
+          onChange={handleSearchFilter}
+          fullWidth
+          autoComplete="off"
+          sx={{
+            input: { color: "white" }, // Text color inside the input
+            label: { color: "white" }, // Label color
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "white", // Border color
+              },
+              "&:hover fieldset": {
+                borderColor: "white", // Border color on hover
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "white", // Border color when focused
+              },
+            },
+          }}
+        />
+
+        <FormControl fullWidth variant="outlined">
+          <InputLabel sx={{ color: "white" }}>Category</InputLabel>
+          <Select
+            label="Category"
+            onChange={handleCategoryFilter}
+            defaultValue=""
+            fullWidth
+            sx={{
+              color: "white",
+              borderColor: "white",
+              ".MuiOutlinedInput-notchedOutline": {
+                borderColor: "white",
+              },
+              "&:hover .MuiOutlinedInput-notchedOutline": {
+                borderColor: "white",
+              },
+              "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+                borderColor: "white",
+              },
+              // Customizing the arrow icon color
+              "& .MuiSelect-icon": {
+                color: "white", // Change the arrow color to white
+              },
+            }}
+          >
+            <MenuItem value="">All</MenuItem>
+            <MenuItem value={ECategory.BREAK_FAST}>Breakfast</MenuItem>
+            <MenuItem value={ECategory.LUNCH}>Lunch</MenuItem>
+            <MenuItem value={ECategory.DINNER}>Dinner</MenuItem>
+            <MenuItem value={ECategory.DESSERT}>Dessert</MenuItem>
+          </Select>
+        </FormControl>
       </div>
       <div className="recipeContainer">
         {filteredRecipes.map((recipe, index) => (
           <Recipe recipe={recipe} key={index} />
         ))}
       </div>
-    </>
+    </motion.div>
   );
 };
 
