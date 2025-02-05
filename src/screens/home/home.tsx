@@ -1,6 +1,7 @@
 import "../screens.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const Home = () => {
   useEffect(() => {
     document.title = "Recipe World"; // Set the document title for the page
@@ -13,7 +14,25 @@ const Home = () => {
       transition={{ duration: 0.4 }}
       className="min-h-screen bg-gray-900 text-white"
     >
-      Home Page
+      <div className="container">
+        <div className="text">
+          <h1>Recipe Book</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perspiciatis illum consequuntur nulla, dolore sint maiores delectus
+            aliquam non id tenetur tempora nesciunt rerum corrupti deleniti ut
+            quidem eos? Iste, accusamus.
+          </p>
+        </div>
+
+        <div className="wigglingSVG">
+          <DotLottieReact
+            src="https://lottie.host/b95dab2b-84c2-4460-bfee-bbc91bb15800/eCTlNWGlsg.lottie"
+            loop
+            autoplay
+          />
+        </div>
+      </div>
     </motion.div>
   );
 };

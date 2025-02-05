@@ -11,35 +11,11 @@
     justify-content: space-evenly;
 }
 
-/* .hero .recipe-image{
-    position: relative;
-    border-radius: 10px;
-}
-
-.hero .recipe-image:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 99%;
-    width: 700px;
-    background-image: linear-gradient(to top, black,rgba(5, 5, 5, 0.526), transparent);
-    border-radius: 10px;
-}
-
-.hero .recipe-image img {
-    max-width: 700px;
-    max-height: 400px;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    border-radius: 10px;
-} */
-
 .hero .recipe-image {
     position: relative;
     border-radius: 10px;
-    max-width: 100%; /* Make container responsive */
-    margin: 0 auto; /* Center the container */
+    max-width: 100%; 
+    margin: 0 auto;
 }
 
 .hero .recipe-image:before {
@@ -47,8 +23,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%; /* Full height */
-    width: 100%; /* Full width of container */
+    height: 100%;
+    width: 100%;
     background-image: linear-gradient(to top, black,rgba(5, 5, 5, 0.526), transparent);
     border-radius: 10px;
 
@@ -62,8 +38,8 @@
     object-fit: cover;
     aspect-ratio: 16/9;
     border-radius: 10px;
-    display: block; /* Remove default image spacing */
-    margin: 0 auto; /* Center the image */
+    display: block; 
+    margin: 0 auto; 
 }
 
 .cat{

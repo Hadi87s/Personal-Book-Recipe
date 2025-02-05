@@ -13,23 +13,32 @@
     gap: 10px;
 }
 
-/* .search input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #f1f1f1;
-    font-family: "Fredoka";
-} */
-
-/* .category select {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #f1f1f1;  
-    font-family: "Fredoka";
-} */
-
 .image img {
     max-width: 100%;
     height: auto;
     aspect-ratio: 16/ 9;
     background-attachment: fixed;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.container .text {
+    max-width: 500px;
+}
+
+.container .text h1 {
+    font-size: clamp(1.8rem,7vw,4rem);
+}
+.container .text p {
+    font-size: clamp(0.8rem,3vw,1.2rem);
+}
+
+.wigglingSVG{
+    max-width: 800px;
 }
