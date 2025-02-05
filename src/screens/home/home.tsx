@@ -15,25 +15,6 @@ const Home = () => {
       className="min-h-screen bg-gray-900 text-white"
     >
       <div className="container">
-        <div className="bg">
-          <svg
-            width="700"
-            height="250"
-            viewBox="0 0 700 250"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M0 235.849C0 105.593 105.593 0 235.849 0H685.849C693.664 0 700 6.33559 700 14.1509V14.1509C700 144.407 594.407 250 464.151 250H14.1509C6.33559 250 0 243.664 0 235.849V235.849Z"
-              fill="#F4AF00"
-            />
-            <path
-              d="M0 235.849C0 105.593 105.593 0 235.849 0H685.849C693.664 0 700 6.33559 700 14.1509V14.1509C700 144.407 594.407 250 464.151 250H14.1509C6.33559 250 0 243.664 0 235.849V235.849Z"
-              fill="#FF0101"
-              fill-opacity="0.21"
-            />
-          </svg>
-        </div>
         <div className="text">
           <h1>Recipe Book</h1>
           <p>
