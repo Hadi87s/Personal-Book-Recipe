@@ -8,9 +8,10 @@
     display: flex;
     padding: 10px;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.hero .recipe-image{
+/* .hero .recipe-image{
     position: relative;
     border-radius: 10px;
 }
@@ -26,6 +27,45 @@
     border-radius: 10px;
 }
 
+.hero .recipe-image img {
+    max-width: 700px;
+    max-height: 400px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+} */
+
+.hero .recipe-image {
+    position: relative;
+    border-radius: 10px;
+    max-width: 100%; /* Make container responsive */
+    margin: 0 auto; /* Center the container */
+}
+
+.hero .recipe-image:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height */
+    width: 100%; /* Full width of container */
+    background-image: linear-gradient(to top, black,rgba(5, 5, 5, 0.526), transparent);
+    border-radius: 10px;
+
+}
+
+.hero .recipe-image img {
+    width: 100%; 
+    height: auto; 
+    max-width: 700px; 
+    max-height: 675px; 
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    display: block; /* Remove default image spacing */
+    margin: 0 auto; /* Center the image */
+}
+
 .cat{
     position: absolute;
     top: 10px;
@@ -37,16 +77,9 @@
     font-size: 14px;
 }
 
-.hero .recipe-image img {
-    max-width: 700px;
-    max-height: 400px;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    border-radius: 10px;
-}
 
 .hero .title{
-    padding: 20px 10px;
+    padding: 20px 10px 0;
     position: absolute;
     bottom: 20px;
     left: 0;
@@ -54,13 +87,14 @@
 
 .hero .title h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: clamp(1.8rem,7vw,4rem);
     color: #f0f0f0;
     font-weight: 500;
 }
 .hero .title p {
     color: #bcbcbc;
     margin: 0;
+    font-size: clamp(0.8rem,3vw,1.2rem);
 }
 
 .lists{
@@ -77,9 +111,14 @@
 
 .accordions {
     width: 420px;
-    margin-left: 3%;
+
 }
 
-.typ{
-    font-family: "Fredoka";
+@media (max-width: 1155px) {
+    .accordions{
+        margin-top: 15px;
+        width: 100%;
+        max-width: 700px;
+    }
 }
+
