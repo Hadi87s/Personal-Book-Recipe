@@ -1,7 +1,6 @@
 import "../screens.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 const Home = () => {
   useEffect(() => {
     document.title = "Recipe World"; // Set the document title for the page
@@ -12,7 +11,6 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="min-h-screen bg-gray-900 text-white"
     >
       <div className="container">
         <div className="text">

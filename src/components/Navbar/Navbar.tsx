@@ -3,14 +3,13 @@ import "./navbar.css";
 import { motion } from "framer-motion";
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="mt-5">
       <div className="logo">Logo</div>
 
       <motion.div
         initial={{ opacity: 0, y: -400 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="min-h-screen bg-gray-900 text-white"
       >
         <ul className="navList">
           <li>

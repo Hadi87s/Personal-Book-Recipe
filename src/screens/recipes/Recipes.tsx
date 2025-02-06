@@ -62,7 +62,6 @@ const Recipes = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="min-h-screen bg-gray-900 text-white"
     >
       <div className="filter">
         <TextField

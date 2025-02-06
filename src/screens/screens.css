@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 10px;
-     justify-content: center;
+    justify-content: center;
     padding: 10px; 
 }
 
@@ -20,13 +20,12 @@
     background-attachment: fixed;
 }
 
-
 .container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    flex-wrap:wrap;;
+    flex-wrap:wrap;
     padding: 10px 5px;
 }
 
