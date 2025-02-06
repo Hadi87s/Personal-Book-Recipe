@@ -6,6 +6,10 @@
     padding: 10px; 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .filter{
     padding: 10px;
     margin-bottom: 5px;
@@ -56,4 +60,40 @@
     50%{
         transform: translateY(20px);
     }
+}
+
+.custom-shape-divider-bottom-1738882758 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.custom-shape-divider-bottom-1738882758 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 383px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1738882758 .shape-fill {
+    fill: #E79E25;
+}
+
+.blob{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    aspect-ratio: 16 / 9;
+    width: 65vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url("../../public/mainCover.svg");
+    background-repeat: no-repeat;
+    transform: scale(2);
 }

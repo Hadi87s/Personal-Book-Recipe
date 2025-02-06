@@ -23,7 +23,7 @@ const Home = () => {
             quidem eos? Iste, accusamus.
           </p>
         </div>
-
+        <div className="blob"></div>
         <div className="wigglingSVG">
           <img
             src="../../../public/recipe.svg"
