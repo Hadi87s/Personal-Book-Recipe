@@ -50,3 +50,6 @@ nav a, nav div {
 nav a:hover {
     color: orange;
 }
+nav .login a:hover {
+    color: #f1f1f1;
+}

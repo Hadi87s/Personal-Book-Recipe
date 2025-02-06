@@ -11,7 +11,7 @@ const Home = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.8 }}
     >
       <div className="container">
         <div className="text">
@@ -22,15 +22,9 @@ const Home = () => {
             aliquam non id tenetur tempora nesciunt rerum corrupti deleniti ut
             quidem eos? Iste, accusamus.
           </p>
+          <div className="blob"></div>
         </div>
-        <div className="blob"></div>
-        <div className="wigglingSVG">
-          <img
-            src="../../../public/recipe.svg"
-            width="270px"
-            alt="recipe-book-svg"
-          />
-        </div>
+        <div className="wigglingSVG"></div>
       </div>
       <Example />
     </motion.div>

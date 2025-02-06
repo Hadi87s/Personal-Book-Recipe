@@ -48,8 +48,13 @@ body {
 }
 
 .wigglingSVG{
-    max-width: 300px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 50px;
     animation: wiggle 1500ms ease-in-out infinite;
+    background-image: url("../../public/spoon.svg");
+    background-repeat: no-repeat;
 }
 
 
