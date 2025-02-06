@@ -1,25 +1,46 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center ;
     align-items: center;
     padding: 0px 15px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
     margin-bottom: 20px;
 }
+
 
 .navList{
     display: flex;
     column-gap: 20px;
     list-style: none;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #f1f1f1;
+    backdrop-filter: blur(3px);
+    clip-path: polygon(2% 0, 100% 0, 98% 100%, 0% 100%);
+    width: 700px;
+    padding: 10px 30px;
+}
+
+nav .login {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    clip-path: polygon(19% 0, 100% 0, 100% 100%, 0% 100%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav .logo {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    clip-path: polygon(0 0, 100% 0, 81% 100%, 0% 100%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 nav a, nav div {
     text-decoration: none;
     color: #111;
     transition: color 120ms ease-in;
+
 }
 
 nav a:hover {

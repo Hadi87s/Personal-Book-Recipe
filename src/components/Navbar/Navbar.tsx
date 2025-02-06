@@ -3,14 +3,15 @@ import "./navbar.css";
 import { motion } from "framer-motion";
 const Navbar = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -400 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-      className="min-h-screen bg-gray-900 text-white"
-    >
-      <nav>
-        <div className="logo">Logo</div>
+    <nav>
+      <div className="logo">Logo</div>
+
+      <motion.div
+        initial={{ opacity: 0, y: -400 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="min-h-screen bg-gray-900 text-white"
+      >
         <ul className="navList">
           <li>
             <Link to="/">Home</Link>
@@ -22,11 +23,11 @@ const Navbar = () => {
             <Link to="/add-recipe">Add Recipe</Link>
           </li>
         </ul>
-        <div>
-          <Link to="/login">Login</Link>
-        </div>
-      </nav>
-    </motion.div>
+      </motion.div>
+      <div className="login">
+        <Link to="/login">Login</Link>
+      </div>
+    </nav>
   );
 };
 

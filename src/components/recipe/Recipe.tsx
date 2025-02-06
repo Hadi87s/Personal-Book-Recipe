@@ -2,8 +2,6 @@ import { Link } from "react-router-dom";
 import { IRecipe } from "../../@Types";
 import "./recipe.css";
 
-
-
 interface IProps {
   recipe: IRecipe;
 }
