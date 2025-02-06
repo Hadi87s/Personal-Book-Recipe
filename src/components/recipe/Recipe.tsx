@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { IRecipe } from "../../@Types";
 import "./recipe.css";
-import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
+
+
 
 interface IProps {
   recipe: IRecipe;
@@ -12,13 +13,13 @@ const Recipe = ({ recipe }: IProps) => {
     <div className="card">
       <div className="image">
         <img src={recipe.image} alt="" />
+        <div className="catg">{recipe.category}</div>
       </div>
-      <div className="name">
-        <Link to={`/recipe/${recipe.id}`}>
-          {recipe.title} <LaunchRoundedIcon fontSize="small" />
-        </Link>
-      </div>
+      <div className="name">{recipe.title}</div>
       <div className="desc">{recipe.description}</div>
+      <div className="details">
+        <Link to={`/recipe/${recipe.id}`}>Check Details</Link>
+      </div>
     </div>
   );
 };

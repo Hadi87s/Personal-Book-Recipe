@@ -1,0 +1,6 @@
+[
+    {"id":"w9VSohcXaHGtbm2wxDJaR","title":"Chicken Biryani","image":"../../../public/recipe1.jpg","description":"its very tasteful and I love it so much!","category":"Breakfast","ingredients":["Chicken", "Rice", "Seasoning"],"instructions":["Cook","Wait","Eat"]},
+    {"id":"8a7nNh_ODtP0GKFYUShEp","title":"Chicken Serrano","image":"../../../public/recipe2.jpg","description":"its very delicious and I love it.","category":"Desert","ingredients":["Chicken", "Rice", "Seasoning"],"instructions":["Boil","Wait","Eat"]},
+    {"id":"PyAyuic9YRC9kNOxrNsmU","title":"Meat Bowl","image":"https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","description":"This is a traditional diff from ancient Chinese Culture, My mom used to cook that for us and we love it still, god bless you mom for making us such a delicious dish.","category":"Lunch","ingredients":["Water","Salt","Meat","Rice","Pepper"],"instructions":["Add all the component in a big bowl.","Mix well.","Add water.","Boil for 30m.","Bona Batet!"]}
+]
+

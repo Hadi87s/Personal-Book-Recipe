@@ -4,7 +4,8 @@
     background-color: #f1f1f1;
     border-radius: 10px;
     color: #111;
-    border: 2px solid #ccc;
+    border: 3px solid #ccc;
+    position: relative;
 }
 
 .card .name {
@@ -33,4 +34,45 @@
     border-top-left-radius:10px ;
     border-top-right-radius:10px ;
     object-fit: cover;
+}
+
+.catg {
+    padding: 0.25rem 0.5rem;
+    border-radius: 10px;
+    background-color:#f1f1f1;
+    width: fit-content;
+    margin: -20px auto 0;
+    position: relative;
+    z-index: 2;
+    color: orange;
+    font-weight: 500;
+}
+
+.fav{
+    all: unset;
+    padding: 5px 5px;
+    border-radius: 50%;
+    height: 25px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    column-gap: 10px;
+}
+
+.details a {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgba(255, 166, 0, 0.511);
+    border: 2px solid orange;
+    color: #f1f1f1;
+    border-radius: 10px;
+    transition: 150ms ease-in-out;
+}
+
+.details a:hover{
+    color: rgb(255, 166, 0);
+    background-color: #f1f1f17d ;
 }
