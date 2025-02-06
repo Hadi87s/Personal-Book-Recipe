@@ -1,6 +1,7 @@
 import "../screens.css";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import Example from "../../components/HorizontalScroll/HorizontalScroll";
 const Home = () => {
   useEffect(() => {
     document.title = "Recipe World"; // Set the document title for the page
@@ -24,11 +25,6 @@ const Home = () => {
         </div>
 
         <div className="wigglingSVG">
-          {/* <DotLottieReact
-            src="https://lottie.host/b95dab2b-84c2-4460-bfee-bbc91bb15800/eCTlNWGlsg.lottie"
-            loop
-            autoplay
-          /> */}
           <img
             src="../../../public/recipe.svg"
             width="270px"
@@ -36,6 +32,7 @@ const Home = () => {
           />
         </div>
       </div>
+      <Example />
     </motion.div>
   );
 };
