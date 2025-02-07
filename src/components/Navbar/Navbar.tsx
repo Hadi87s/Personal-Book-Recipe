@@ -23,7 +23,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`m-5 ${scrolled ? `navbar scroll` : `navbar`}`}>
+    <nav className={`${scrolled ? `navbar scroll` : `navbar`}`}>
       <div
         onClick={() => {
           navigate("/");
