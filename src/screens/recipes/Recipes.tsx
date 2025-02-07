@@ -62,7 +62,7 @@ const Recipes = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
-      className="recipes-container mt-10"
+      className="recipes-container"
     >
       <div className="waves"></div>
       <div className="filter">

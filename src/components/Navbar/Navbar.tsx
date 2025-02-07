@@ -24,40 +24,34 @@ const Navbar = () => {
   }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: -400 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <nav className={`m-5 ${scrolled ? `navbar scroll` : `navbar`}`}>
-        <div
-          onClick={() => {
-            navigate("/");
-            window.scrollTo({
-              top: 0,
-              left: 0,
-              behavior: "smooth",
-            });
-          }}
-          className="chef-logo"
-        ></div>
+    <nav className={`m-5 ${scrolled ? `navbar scroll` : `navbar`}`}>
+      <div
+        onClick={() => {
+          navigate("/");
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+        }}
+        className="chef-logo"
+      ></div>
 
-        <ul className="navList">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/recipe">Recipes</Link>
-          </li>
-          <li>
-            <Link to="/add-recipe">Add Recipe</Link>
-          </li>
-        </ul>
-        <div className="login">
-          <Link to="/login">Login</Link>
-        </div>
-      </nav>
-    </motion.div>
+      <ul className="navList">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/recipe">Recipes</Link>
+        </li>
+        <li>
+          <Link to="/add-recipe">Add Recipe</Link>
+        </li>
+      </ul>
+      <div className="login">
+        <Link to="/login">Login</Link>
+      </div>
+    </nav>
   );
 };
 
