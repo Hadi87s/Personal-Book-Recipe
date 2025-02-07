@@ -12,7 +12,7 @@ import {
   SelectChangeEvent,
   TextField,
 } from "@mui/material";
-import Recipe from "../../components/Recipe/Recipe";
+import Recipe from "../../components/recipe/Recipe";
 
 const Recipes = () => {
   const { recipes } = useContext(RecipesContext);
