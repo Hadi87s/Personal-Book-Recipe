@@ -1,3 +1,8 @@
+.recipes-container{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 .recipeContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

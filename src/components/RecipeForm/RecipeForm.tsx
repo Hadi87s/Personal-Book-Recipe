@@ -95,7 +95,18 @@ const RecipeForm = () => {
           variant="outlined"
           fullWidth
           required
-          sx={whiteStyle}
+          sx={{
+            ...whiteStyle,
+            "& .MuiInputLabel-root": {
+              color: "white", // Set initial label color
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#FFE3B9", // Set focused label color to orange
+            },
+            "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+              borderColor: "#FFE3B9", // Set the border color when focused to orange
+            },
+          }}
           InputLabelProps={{ sx: { color: "white" } }}
         />
 
@@ -105,7 +116,18 @@ const RecipeForm = () => {
           variant="outlined"
           fullWidth
           required
-          sx={whiteStyle}
+          sx={{
+            ...whiteStyle,
+            "& .MuiInputLabel-root": {
+              color: "white", // Set initial label color
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#FFE3B9", // Set focused label color to orange
+            },
+            "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+              borderColor: "#FFE3B9", // Set the border color when focused to orange
+            },
+          }}
           InputLabelProps={{ sx: { color: "white" } }}
         />
 
@@ -117,7 +139,18 @@ const RecipeForm = () => {
           multiline
           rows={3}
           required
-          sx={whiteStyle}
+          sx={{
+            ...whiteStyle,
+            "& .MuiInputLabel-root": {
+              color: "white", // Set initial label color
+            },
+            "& .MuiInputLabel-root.Mui-focused": {
+              color: "#FFE3B9", // Set focused label color to orange
+            },
+            "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+              borderColor: "#FFE3B9", // Set the border color when focused to orange
+            },
+          }}
           InputLabelProps={{ sx: { color: "white" } }}
         />
 
@@ -127,10 +160,30 @@ const RecipeForm = () => {
           variant="outlined"
           fullWidth
           required
+          displayEmpty
           sx={{
-            ...whiteStyle,
+            "& .MuiOutlinedInput-root": {
+              "& fieldset": {
+                borderColor: "white", // Initial border color set to white
+              },
+              "&:hover fieldset": {
+                borderColor: "white", // Keep the border white when hovering
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "#FFE3B9 !important", // Change border color to #FFE3B9 when focused
+              },
+            },
+            "& .MuiSelect-select": {
+              color: "white", // Text color inside the select
+            },
+            "& .MuiInputLabel-root": {
+              color: "white", // Initial label color
+              "&.Mui-focused": {
+                color: "#FFE3B9 !important", // Change label color to #FFE3B9 when focused
+              },
+            },
             "& .MuiSelect-icon": {
-              color: "white",
+              color: "white", // Set the select icon color to white
             },
           }}
           MenuProps={{
@@ -145,10 +198,13 @@ const RecipeForm = () => {
             },
           }}
         >
-          <MenuItem value={ECategory.BREAK_FAST}>Breakfast</MenuItem>
-          <MenuItem value={ECategory.LUNCH}>Lunch</MenuItem>
-          <MenuItem value={ECategory.DINNER}>Dinner</MenuItem>
-          <MenuItem value={ECategory.DESSERT}>Dessert</MenuItem>
+          <MenuItem value="" disabled>
+            Select Category
+          </MenuItem>
+          <MenuItem value="BREAK_FAST">Breakfast</MenuItem>
+          <MenuItem value="LUNCH">Lunch</MenuItem>
+          <MenuItem value="DINNER">Dinner</MenuItem>
+          <MenuItem value="DESSERT">Dessert</MenuItem>
         </Select>
 
         <Divider
@@ -168,7 +224,18 @@ const RecipeForm = () => {
             label="Add Ingredient"
             variant="outlined"
             fullWidth
-            sx={whiteStyle}
+            sx={{
+              ...whiteStyle,
+              "& .MuiInputLabel-root": {
+                color: "white", // Set initial label color
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#FFE3B9", // Set focused label color to orange
+              },
+              "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+                borderColor: "#FFE3B9", // Set the border color when focused to orange
+              },
+            }}
             InputLabelProps={{ sx: { color: "white" } }}
           />
           <Button
@@ -225,7 +292,18 @@ const RecipeForm = () => {
             variant="outlined"
             fullWidth
             multiline
-            sx={whiteStyle}
+            sx={{
+              ...whiteStyle,
+              "& .MuiInputLabel-root": {
+                color: "white", // Set initial label color
+              },
+              "& .MuiInputLabel-root.Mui-focused": {
+                color: "#FFE3B9", // Set focused label color to orange
+              },
+              "& .MuiOutlinedInput-root.Mui-focused fieldset": {
+                borderColor: "#FFE3B9", // Set the border color when focused to orange
+              },
+            }}
             InputLabelProps={{ sx: { color: "white" } }}
           />
           <Button

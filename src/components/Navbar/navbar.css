@@ -23,7 +23,7 @@ nav.navbar {
 
 nav.scroll {
     background-color: rgba(79, 51, 0, 0.227);
-    border: 1px solid  rgba(213, 131, 0, 0.788);
+    border: 2px solid  rgba(213, 131, 0, 0.788);
     background-image: radial-gradient(rgba(0, 0, 0, 0) 2px, rgb(59 48 30 / 50%) 1px);
     width: 1000px;
     padding: 10px 15px;
@@ -32,9 +32,9 @@ nav.scroll {
 
 .navList{
     display: flex;
-    column-gap: 20px;
+    column-gap: 50px;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 900px;
     padding: 10px 30px;
     z-index: 10;
@@ -49,23 +49,31 @@ nav .login a{
     background-color: rgb(156, 97, 2);
 }
 
-nav .logo {
+nav .chef-logo {
     padding: 10px 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    cursor: pointer;
 }
 
 nav a, nav div {
     text-decoration: none;
     color: #f1f1f1;
-    transition: color 120ms ease-in,text-shadow 120ms ease-in-out;
+    transition: color 120ms ease-in,text-shadow 200ms ease-in-out;
     z-index: 11;
 }
 
 nav a:hover {
-    color: white;
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 21px white;
 }
 nav .login a:hover {
     color: #f1f1f1;
+}
+
+.chef-logo{
+    background-image: url("../../../public/logo.svg");
+    background-position: center;
+    background-size: cover;
+    width: 75px;
+    height: 50px;
 }

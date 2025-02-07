@@ -5,6 +5,7 @@ import Example from "../../components/HorizontalScroll/HorizontalScroll";
 import ParallaxSection from "../../components/parallax-section/ParallaxSection";
 import AdvancedParallaxSection from "../../components/advanced-parallax/AdvancedParallaxSection";
 import Footer from "../../components/footer/Footer";
+
 const Home = () => {
   useEffect(() => {
     document.title = "Recipe World"; // Set the document title for the page
@@ -18,11 +19,17 @@ const Home = () => {
     >
       <div className="container">
         <div className="text">
-          <h1>Discover Delicious Recipes and Culinary Secrets!</h1>
-          <p>
-            Explore our exclusive recipes, crafted by top chefs for food
-            enthusiasts.
-          </p>
+          <motion.div
+            initial={{ x: -40 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            <h1>Discover Delicious Recipes and Culinary Secrets!</h1>
+            <p>
+              Explore our exclusive recipes, crafted by top chefs for food
+              enthusiasts.
+            </p>
+          </motion.div>
           <div className="blob"></div>
         </div>
         <motion.div

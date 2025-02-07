@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       const y = window.scrollY;
-      if (y > 150) {
+      if (y > 55) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -28,7 +28,17 @@ const Navbar = () => {
       transition={{ duration: 0.8 }}
     >
       <nav className={`m-5 ${scrolled ? `navbar scroll` : `navbar`}`}>
-        <div className="logo">Logo</div>
+        <div
+          onClick={() => {
+            navigate("/");
+            window.scrollTo({
+              top: 0,
+              left: 0,
+              behavior: "smooth",
+            });
+          }}
+          className="chef-logo"
+        ></div>
 
         <ul className="navList">
           <li>
