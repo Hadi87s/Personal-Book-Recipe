@@ -1,6 +1,28 @@
 [
-    {"id":"w9VSohcXaHGtbm2wxDJaR","title":"Chicken Biryani","image":"../../../public/recipe1.jpg","description":"its very tasteful and I love it so much!","category":"Breakfast","ingredients":["Chicken", "Rice", "Seasoning"],"instructions":["Cook","Wait","Eat"]},
-    {"id":"8a7nNh_ODtP0GKFYUShEp","title":"Chicken Serrano","image":"../../../public/recipe2.jpg","description":"its very delicious and I love it.","category":"Desert","ingredients":["Chicken", "Rice", "Seasoning"],"instructions":["Boil","Wait","Eat"]},
-    {"id":"PyAyuic9YRC9kNOxrNsmU","title":"Meat Bowl","image":"https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","description":"This is a traditional diff from ancient Chinese Culture, My mom used to cook that for us and we love it still, god bless you mom for making us such a delicious dish.","category":"Lunch","ingredients":["Water","Salt","Meat","Rice","Pepper"],"instructions":["Add all the component in a big bowl.","Mix well.","Add water.","Boil for 30m.","Bona Batet!"]}
+  {
+    "id": "xAJE5pVB3unH8TpwoEnK9",
+    "title": "Chicken Biryani",
+    "image": "https://images.unsplash.com/photo-1630851840633-f96999247032?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "its very tasteful and I love it so much!",
+    "category": "Breakfast",
+    "ingredients": ["Chicken", "Salt", "Rice", "Seasoning"],
+    "instructions": [
+      "Put the ingredients together",
+      "Mix very well so the rice take the flavour",
+      "cook it for 30m"
+    ]
+  },
+  {
+    "id": "WJDTQY1uS6xeY_BTb_lS4",
+    "title": "Chicken Serrano",
+    "image": "https://images.unsplash.com/photo-1606728035253-49e8a23146de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "its very delicious and I love it.",
+    "category": "Desert",
+    "ingredients": ["Chicken", "Salt", "Rice", "Seasoning"],
+    "instructions": [
+      "Put the ingredients together",
+      "Mix very well so the rice take the flavour",
+      "cook it for 30m"
+    ]
+  }
 ]
-

@@ -76,22 +76,22 @@ type CardType = {
 
 const cards: CardType[] = [
   {
-    url: "../../../public/pRecipe1.jpg",
+    url: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "WE",
     id: 1,
   },
   {
-    url: "../../../public/pRecipe2.jpg",
+    url: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "HAVE",
     id: 2,
   },
   {
-    url: "../../../public/pRecipe3.jpg",
+    url: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1547&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "SPECIAL",
     id: 3,
   },
   {
-    url: "../../../public/pRecipe4.jpg",
+    url: "https://images.unsplash.com/photo-1484980972926-edee96e0960d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     title: "RECIPES!",
     id: 4,
   },
