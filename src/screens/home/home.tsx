@@ -16,6 +16,7 @@ const Home = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
+      className="topLevel"
     >
       <div className="container">
         <div className="text">
@@ -30,7 +31,6 @@ const Home = () => {
               enthusiasts.
             </p>
           </motion.div>
-          <div className="blob"></div>
         </div>
         <motion.div
           initial={{ opacity: 0, x: 1000, y: -1000 }}

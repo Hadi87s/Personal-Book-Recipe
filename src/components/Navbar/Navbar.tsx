@@ -5,15 +5,17 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
   const navigate = useNavigate();
+
+  const handleScroll = () => {
+    const y = window.scrollY;
+    if (y > 55) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY;
-      if (y > 55) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
     window.addEventListener("scroll", handleScroll);
 
     return () => {
