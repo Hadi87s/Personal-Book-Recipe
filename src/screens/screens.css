@@ -38,9 +38,6 @@ body {
     padding: 10px 5px; 
 }
 
-
-
-
 .container .text h1 {
     font-size: clamp(2.0rem,10vw,5rem);
     color: #f1f1f1;
@@ -62,7 +59,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 @keyframes wiggle {
     0%,100% {
         transform: translateY(0);
@@ -71,9 +67,6 @@ body {
         transform: translateY(20px);
     }
 }
-
-
-
 
 .rForm, .blob, .waves{
     background-image: url("../../public/rForm.svg");

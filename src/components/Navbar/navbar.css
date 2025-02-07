@@ -94,7 +94,6 @@ nav .login a:hover {
 @media (max-width:700px) {
     nav .navList {
        display: none;
-       
     }
     nav {
         width: 90%;
