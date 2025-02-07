@@ -112,7 +112,7 @@ export default function LoginPage() {
           {/* Image Section */}
           <div className="hidden md:block w-1/2 relative overflow-hidden group rounded-br-2xl rounded-tr-2xl">
             <img
-              src="../../../public/login.jpg"
+              src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Recipe"
               className="transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:blur-sm"
             />

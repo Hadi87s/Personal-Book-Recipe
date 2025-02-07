@@ -6,7 +6,8 @@ const INITIAL_LIST: IRecipe[] = [
   {
     id: nanoid(),
     title: "Chicken Biryani",
-    image: "../../../public/recipe1.jpg",
+    image:
+      "https://images.unsplash.com/photo-1630851840633-f96999247032?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "its very tasteful and I love it so much!",
     category: ECategory.BREAK_FAST,
     ingredients: ["Chicken", "Salt", "Rice", "Seasoning"],
@@ -19,7 +20,8 @@ const INITIAL_LIST: IRecipe[] = [
   {
     id: nanoid(),
     title: "Chicken Serrano",
-    image: "../../../public/recipe2.jpg",
+    image:
+      "https://images.unsplash.com/photo-1606728035253-49e8a23146de?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "its very delicious and I love it.",
     category: ECategory.DESSERT,
     ingredients: ["Chicken", "Salt", "Rice", "Seasoning"],
