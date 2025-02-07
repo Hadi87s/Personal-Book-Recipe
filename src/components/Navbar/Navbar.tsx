@@ -1,16 +1,35 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 const Navbar = () => {
-  return (
-    <nav className="mt-5">
-      <div className="logo">Logo</div>
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
-      <motion.div
-        initial={{ opacity: 0, y: -400 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      if (y > 300) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: -400 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <nav className={`m-5 ${scrolled ? `navbar scroll` : `navbar`}`}>
+        <div className="logo">Logo</div>
+
         <ul className="navList">
           <li>
             <Link to="/">Home</Link>
@@ -22,11 +41,11 @@ const Navbar = () => {
             <Link to="/add-recipe">Add Recipe</Link>
           </li>
         </ul>
-      </motion.div>
-      <div className="login">
-        <Link to="/login">Login</Link>
-      </div>
-    </nav>
+        <div className="login">
+          <Link to="/login">Login</Link>
+        </div>
+      </nav>
+    </motion.div>
   );
 };
 
