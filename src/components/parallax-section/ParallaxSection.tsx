@@ -1,8 +1,9 @@
 import React from "react";
-
+import "../../screens/screens.css";
 const ParallaxSection: React.FC = () => {
   return (
     <div>
+      <div className="blob"></div>
       {/* Parallax Section 1 */}
       <div className="relative">
         <div
@@ -14,7 +15,7 @@ const ParallaxSection: React.FC = () => {
         ></div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
           <h1 className="text-4xl md:text-6xl text-white font-extrabold">
-            Welcome to the World of Cooking
+            Welcome to the World of Cooking!
           </h1>
         </div>
       </div>
@@ -44,7 +45,6 @@ const ParallaxSection: React.FC = () => {
           </h1>
         </div>
       </div>
-      
     </div>
   );
 };

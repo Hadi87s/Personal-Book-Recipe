@@ -31,6 +31,8 @@ body {
     position: relative;
     flex-wrap:wrap;
     padding: 10px 5px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -41,7 +43,7 @@ body {
     width: 70%;
 }
 .container .text p {
-    font-size: clamp(1.2rem,3vw,1.2rem);
+    font-size: clamp(1.2rem,3vw,2rem);
     color: #dddddd;
 }
 
@@ -83,4 +85,17 @@ body {
     background-image: url("../../public/waves.svg");
     height: 100vh;   
     transition: 300ms ease-in-out; 
+}
+
+.rForm{
+    background-image: url("../../public/rForm.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left:0
+
 }

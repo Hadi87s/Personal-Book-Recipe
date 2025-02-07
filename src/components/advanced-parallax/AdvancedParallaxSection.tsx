@@ -16,7 +16,7 @@ const AdvancedParallaxSection: React.FC = () => {
         >
           <div className="absolute inset-0 flex justify-center items-center">
             <h1 className="text-white text-6xl font-bold">
-              Welcome to Food World
+              Welcome to Food World!
             </h1>
           </div>
         </Parallax>

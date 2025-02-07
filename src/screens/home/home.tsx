@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Example from "../../components/HorizontalScroll/HorizontalScroll";
 import ParallaxSection from "../../components/parallax-section/ParallaxSection";
 import AdvancedParallaxSection from "../../components/advanced-parallax/AdvancedParallaxSection";
+import Footer from "../../components/footer/Footer";
 const Home = () => {
   useEffect(() => {
     document.title = "Recipe World"; // Set the document title for the page
@@ -26,7 +27,7 @@ const Home = () => {
         </div>
         <motion.div
           initial={{ opacity: 0, x: 1000, y: -1000 }}
-          animate={{ opacity: 1, x: 400, y: -300 }}
+          animate={{ opacity: 1, x: 600, y: -350 }}
           transition={{ duration: 0.8 }}
         >
           <div className="wigglingSVG"></div>
@@ -35,6 +36,7 @@ const Home = () => {
       <Example />
       <ParallaxSection />
       <AdvancedParallaxSection />
+      <Footer />
     </motion.div>
   );
 };

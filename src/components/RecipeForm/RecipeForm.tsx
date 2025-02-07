@@ -2,6 +2,7 @@ import { useContext, useRef, useState } from "react";
 import { RecipesContext } from "../../providers/recipesProvider";
 import { ECategory, IRecipe } from "../../@Types";
 import { nanoid } from "nanoid";
+import "../../screens/screens.css";
 import {
   Box,
   Button,
@@ -13,18 +14,6 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
-
-const whiteStyle = {
-  color: "white",
-  borderColor: "white",
-  "& .MuiOutlinedInput-root": {
-    "& fieldset": { borderColor: "white" },
-    "&:hover fieldset": { borderColor: "white" },
-    "&.Mui-focused fieldset": { borderColor: "white" },
-  },
-  "& .MuiInputLabel-root": { color: "white" },
-  "& .MuiInputBase-input": { color: "white" },
-};
 
 const RecipeForm = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
@@ -73,8 +62,28 @@ const RecipeForm = () => {
     setInstructions([]);
   };
 
+  const whiteStyle = {
+    color: "white",
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "white",
+        borderRadius: "8px", // Adjust border radius here
+      },
+      "&:hover fieldset": {
+        borderColor: "white",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "white",
+      },
+    },
+    "& .MuiInputBase-input": {
+      color: "white",
+    },
+  };
+
   return (
     <Box sx={{ maxWidth: 600, mx: "auto", p: 3 }}>
+      <div className="rForm"></div>
       <Box
         component="form"
         onSubmit={handleRecipeSubmit}
@@ -119,26 +128,15 @@ const RecipeForm = () => {
           fullWidth
           required
           sx={{
-            color: "white",
-            borderColor: "white",
-            ".MuiOutlinedInput-notchedOutline": {
-              borderColor: "white",
-            },
-            "&:hover .MuiOutlinedInput-notchedOutline": {
-              borderColor: "white",
-            },
-            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              borderColor: "white",
-            },
-            // Customizing the arrow icon color
+            ...whiteStyle,
             "& .MuiSelect-icon": {
-              color: "white", // Change the arrow color to white
+              color: "white",
             },
           }}
           MenuProps={{
             PaperProps: {
               sx: {
-                bgcolor: "#121212",
+                bgcolor: "#FCAF3Cf1",
                 "& .MuiMenuItem-root": {
                   color: "white",
                   "&:hover": { bgcolor: "rgba(255,255,255,0.1)" },
@@ -177,7 +175,16 @@ const RecipeForm = () => {
             variant="contained"
             onClick={handleAddingIngredient}
             type="button"
-            sx={{ color: "white", border: "1px solid white" }}
+            sx={{
+              bgcolor: "#FCAF3C",
+              color: "white",
+              border: "2px solid white",
+              borderRadius: "10px",
+              "&:hover": {
+                bgcolor: "rgba(252, 175, 60, 0.6)",
+                borderColor: "#FCAF3C",
+              },
+            }}
           >
             Add
           </Button>
@@ -187,7 +194,7 @@ const RecipeForm = () => {
           dense
           sx={{
             bgcolor: "rgba(255,255,255,0.1)",
-            borderRadius: 1,
+            borderRadius: "8px", // Adjust border radius here
             color: "white",
           }}
         >
@@ -225,7 +232,16 @@ const RecipeForm = () => {
             variant="contained"
             onClick={handleAddingInstruction}
             type="button"
-            sx={{ color: "white", border: "1px solid white" }}
+            sx={{
+              bgcolor: "#FCAF3C",
+              color: "white",
+              border: "2px solid white",
+              borderRadius: "10px",
+              "&:hover": {
+                bgcolor: "rgba(252, 175, 60, 0.6)",
+                borderColor: "#FCAF3C",
+              },
+            }}
           >
             Add
           </Button>
@@ -235,7 +251,7 @@ const RecipeForm = () => {
           dense
           sx={{
             bgcolor: "rgba(255,255,255,0.1)",
-            borderRadius: 1,
+            borderRadius: "8px", // Adjust border radius here
             color: "white",
           }}
         >
@@ -253,10 +269,14 @@ const RecipeForm = () => {
           variant="contained"
           size="large"
           sx={{
-            mt: 2,
+            bgcolor: "#FCAF3C",
             color: "white",
-            border: "1px solid white",
-            "&:hover": { bgcolor: "rgba(255,255,255,0.1)" },
+            border: "2px solid white",
+            borderRadius: "10px",
+            "&:hover": {
+              bgcolor: "rgba(252, 175, 60, 0.6)",
+              borderColor: "#FCAF3C",
+            },
           }}
         >
           Add Recipe
