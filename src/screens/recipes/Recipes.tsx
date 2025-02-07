@@ -63,6 +63,7 @@ const Recipes = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
     >
+      <div className="waves"></div>
       <div className="filter">
         <TextField
           type="text"

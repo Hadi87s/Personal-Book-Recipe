@@ -3,7 +3,6 @@ nav {
     flex-direction: row;
     justify-content: center ;
     align-items: center;
-   
     margin-bottom: 20px;
     background-size: 4px 4px;
     position: fixed;
@@ -11,15 +10,15 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     z-index: 50;
-    border-radius: 25px;
-    transition:  300ms ease-in;
+    border-radius: 35px;
+    transition:  250ms ease-in;
 }
 
 nav.navbar {
     background-color: rgba(255, 166, 0, 0);
     border:none;
     width: 1100px;
-    padding: 20px 100px;
+    padding: 20px 40px;
 }
 
 nav.scroll {
@@ -28,6 +27,7 @@ nav.scroll {
     background-image: radial-gradient(rgba(0, 0, 0, 0) 2px, rgb(59 48 30 / 50%) 1px);
     width: 1000px;
     padding: 10px 15px;
+    backdrop-filter: blur(3px);
 }
 
 .navList{

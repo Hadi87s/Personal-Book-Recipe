@@ -68,7 +68,7 @@ body {
 }
 
 
-.blob{
+.blob, .waves{
     position: absolute;
     top: 0;
     left: 30%;
@@ -79,4 +79,9 @@ body {
     background-image: url("../../public/mainCover.svg");
     background-repeat: no-repeat;
     transform: scale(2);
+}
+
+.waves {
+    background-image: url("../../public/waves.svg");
+    height: 80vh;    
 }
