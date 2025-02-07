@@ -16,3 +16,9 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width:994px) {
+  .parallax {
+    background-attachment:initial;
+  }
+}
