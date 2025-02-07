@@ -1,6 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
