@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-import Recipe from "../../components/Recipe/Recipe";
 import "../screens.css";
 import { RecipesContext } from "../../providers/recipesProvider";
 import { useSearchParams } from "react-router-dom";
@@ -13,6 +12,7 @@ import {
   SelectChangeEvent,
   TextField,
 } from "@mui/material";
+import Recipe from "../../components/Recipe/Recipe";
 
 const Recipes = () => {
   const { recipes } = useContext(RecipesContext);
