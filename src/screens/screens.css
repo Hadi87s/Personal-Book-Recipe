@@ -33,14 +33,12 @@ body {
     padding: 10px 5px;
 }
 
-.container .text {
-    max-width: 500px;
-}
 
 .container .text h1 {
-    font-size: clamp(2.4rem,15vw,5rem);
+    font-size: clamp(2.0rem,10vw,5rem);
     color: #f1f1f1;
     margin: 0;
+    width: 70%;
 }
 .container .text p {
     font-size: clamp(1.2rem,3vw,1.2rem);
@@ -52,7 +50,7 @@ body {
     width: 200px;
     height: 200px;
     right: 50px;
-    animation: wiggle 1500ms ease-in-out infinite;
+    animation: wiggle 2000ms ease-in-out infinite;
     background-image: url("../../public/spoon.svg");
     background-repeat: no-repeat;
 }
@@ -78,10 +76,11 @@ body {
     z-index: -1;
     background-image: url("../../public/mainCover.svg");
     background-repeat: no-repeat;
-    transform: scale(2);
+    transform: scale(2.2);
 }
 
 .waves {
     background-image: url("../../public/waves.svg");
-    height: 80vh;    
+    height: 100vh;   
+    transition: 300ms ease-in-out; 
 }
