@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import Recipe from "../../components/recipe/Recipe";
 
+
 const Recipes = () => {
   const { recipes } = useContext(RecipesContext);
   const [filteredRecipes, setFilteredRecipes] = useState<IRecipe[]>(recipes);
