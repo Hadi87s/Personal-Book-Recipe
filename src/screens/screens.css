@@ -34,38 +34,19 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     padding: 10px 5px; 
+    height: 80vh;
 }
 
 .container .text h1 {
-    font-size: clamp(2.0rem,10vw,5rem);
+    font-size: clamp(2.0rem,8vw,3.5rem);
     color: #f1f1f1;
     margin: 0;
-    width: 70%;
 }
 .container .text p {
-    font-size: clamp(1.2rem,3vw,2rem);
+    font-size: clamp(1.2rem,3vw,1.7rem);
     color: #dddddd;
-}
-
-.wigglingSVG{
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    right: 50px;
-    animation: wiggle 2000ms ease-in-out infinite;
-    background-image: url("../../public/spoon.svg");
-    background-repeat: no-repeat;
-}
-
-@keyframes wiggle {
-    0%,100% {
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(20px);
-    }
 }
 
 .rForm, .blob, .waves{
@@ -87,10 +68,4 @@ body {
 
 .waves {
     background-image: url("../../public/waves.svg");
-}
-
-@media (max-width:1000px) {
-    .wigglingSVG{
-        display: none;
-    }
 }

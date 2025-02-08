@@ -22,7 +22,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section
       ref={targetRef}
-      className="relative h-[300vh] bg-gradient-to-b from-yellow-500 via-amber-600 to-transparent rounded-2xl mt-5"
+      className="relative h-[300vh] bg-gradient-to-b from-yellow-500 via-amber-600 to-transparent mt-5"
     >
       <div className="sticky top-10 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
@@ -31,7 +31,7 @@ const HorizontalScrollCarousel = () => {
           })}
           <div className="flex justify-center content-center flex-wrap w-[300px]">
             <Link
-              className="text-white font-bold text-lg uppercase hover:text-yellow-400 transition duration-300 hover:bg-amber-50 rounded-2xl p-5 ease-in-out tracking-wide"
+              className="text-white font-bold text-lg uppercase hover:text-amber-100 border-2 border-amber-50 bg-amber-400 transition duration-300 rounded-2xl p-5 ease-in-out tracking-wide hover:scale-105 hover:ring-2"
               to={"/recipe"}
             >
               SEE FOR YOUR SELF <ArrowRightAltRoundedIcon fontSize="large" />
