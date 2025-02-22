@@ -6,6 +6,7 @@ import ParallaxSection from "../../components/parallax-section/ParallaxSection";
 import AdvancedParallaxSection from "../../components/advanced-parallax/AdvancedParallaxSection";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
+import ScrollVelocity from "../../components/scroll-velocity/ScrollVelocity";
 
 const Home = () => {
   useEffect(() => {
@@ -44,6 +45,12 @@ const Home = () => {
           </motion.div>
         </div>
       </div>
+      <ScrollVelocity
+        texts={['Discover Delicious Recipes from Around the World!', 'Cooking Made Easy – Explore, Cook, Enjoy!']} 
+        velocity={100} 
+        className="custom-scroll-text my-4"
+        
+      />
       <Example />
       <ParallaxSection />
       <AdvancedParallaxSection />

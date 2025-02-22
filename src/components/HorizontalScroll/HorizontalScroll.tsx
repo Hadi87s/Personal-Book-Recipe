@@ -22,7 +22,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section
       ref={targetRef}
-      className="relative h-[300vh] bg-gradient-to-b from-yellow-500 via-amber-600 to-transparent mt-5"
+      className="relative h-[300vh] bg-gradient-to-b from-yellow-500 via-amber-600 to-transparent"
     >
       <div className="sticky top-10 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-4">
