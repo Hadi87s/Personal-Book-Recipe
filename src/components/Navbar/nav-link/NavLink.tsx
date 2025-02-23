@@ -9,7 +9,7 @@ const NavLinkloc = ({to, children}: IProps) => {
   const location = useLocation();
   return (
     <li>
-    <Link className={`${location.pathname === to ? "border-b-2 rounded-b-[2px]" : ""} p-2 font-[500] text-lg hover:text-black`} to={to}>{children}</Link>
+    <Link className={`${location.pathname === to ? "border-b-2 rounded-b-[2px]" : ""} p-2 font-[500] text-lg hover:text-orange-200`} to={to}>{children}</Link>
     </li>
   )
 }
