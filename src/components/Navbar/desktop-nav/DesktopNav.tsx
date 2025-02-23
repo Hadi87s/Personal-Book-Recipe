@@ -1,5 +1,6 @@
 import  { useEffect, useState } from 'react'
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import NavLinkloc from '../nav-link/NavLink';
 const DesktopNav = () => {
     const [scrolled, setScrolled] = useState<boolean>(false);
     const navigate = useNavigate();
@@ -37,7 +38,7 @@ const DesktopNav = () => {
     ];
     
   return (
-    <nav className={`${scrolled ? `navbar scroll` : `navbar`}`}>
+    <nav className={`${scrolled ? `navbar scroll` : `navbar`} min-w-[90%]`}>
       <div
         onClick={() => {
           navigate("/");
@@ -50,18 +51,17 @@ const DesktopNav = () => {
         className="chef-logo"
       ></div>
 
-      <ul className="navList">
+      <ul className="hidden md:flex justify-center gap-x-10 items-center ">
         {links.map((link, index) => (
-          <li key={index}>
-            <NavLink to={link.href}>
+            <NavLinkloc key={index}  to={link.href}>
               {link.name}
-            </NavLink>
-          </li>
+            </NavLinkloc>
         ))}
       </ul>
-      <div className="login">
+      <div className="login hidden md:block">
         <Link to="/login">Login</Link>
       </div>
+      <div className='block md:hidden'>Menu</div>
     </nav>
   )
 }

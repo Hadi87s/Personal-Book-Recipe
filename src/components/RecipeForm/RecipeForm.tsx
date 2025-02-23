@@ -14,6 +14,7 @@ import {
   Typography,
   Divider,
 } from "@mui/material";
+import { motion } from "framer-motion";
 
 const RecipeForm = () => {
   const [ingredients, setIngredients] = useState<string[]>([]);
@@ -84,6 +85,11 @@ const RecipeForm = () => {
   return (
     <Box sx={{ maxWidth: 600, mx: "auto", p: 3 }}>
       <div className="rForm"></div>
+      <motion.div
+      initial={{opacity: 0, x: -70 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4 }}
+    >
       <Box
         component="form"
         onSubmit={handleRecipeSubmit}
@@ -360,6 +366,7 @@ const RecipeForm = () => {
           Add Recipe
         </Button>
       </Box>
+      </motion.div>
     </Box>
   );
 };

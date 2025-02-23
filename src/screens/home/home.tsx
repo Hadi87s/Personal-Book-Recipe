@@ -15,35 +15,37 @@ const Home = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
+      initial={{ opacity: 1 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4 }}
       className="topLevel"
     >
-      <div className="container">
-        <div className="text mx-20">
+      <div className="container mx-auto">
+        <div className="text mx-auto flex flex-col justify-center items-center">
           <motion.div
-            initial={{ x: -40 }}
-            animate={{ x: 0 }}
+            initial={{ opacity:0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4 }}
+            className="p-4"
           >
-            <h1 className="max-w-[600px] font-bold">
+            <h1 className="font-bold">
               Discover Delicious Recipes and Culinary Secrets!
             </h1>
             <p>
               Explore our exclusive recipes, crafted by top chefs for food
               enthusiasts.
             </p>
-            <Link
-              className="flex justify-center p-3 border-amber-600 border-2 rounded-2xl bg-amber-400 my-15 md:w-50 sm:w-40 w-35 transition duration-150 hover:scale-110 mx-auto hover:ring-2"
+           
+          </motion.div>
+        </div>
+        <Link
+              className="flex justify-center p-3  rounded-2xl h-fit bg-amber-400 my-15 md:w-50 sm:w-40 w-35 transition duration-150 hover:scale-110 mx-auto outline-2 hover:outline-offset-2"
               to="/recipe"
             >
               <span className="md:text-3xl sm:text-2xl text-base ">
                 Get Started
               </span>
             </Link>
-          </motion.div>
-        </div>
       </div>
       <ScrollVelocity
         texts={['Discover Delicious Recipes from Around the World!', 'Cooking Made Easy – Explore, Cook, Enjoy!']} 

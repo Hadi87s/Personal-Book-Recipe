@@ -56,13 +56,14 @@ export default function LoginPage() {
   };
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-    >
+
       <ThemeProvider theme={theme}>
-        <div className="flex max-w-[900px] ml-auto mr-auto mt-8">
+        <motion.div
+        initial={{ opacity: 0, x: -70 }}
+        animate={{ opacity: 1 ,x : 0}}
+        transition={{ duration: 0.4 }}
+        className="flex max-w-[900px] ml-auto mr-auto mt-8"
+        >
           {/* Sign-in Form */}
           <div className="w-full md:w-1/2 flex items-center justify-center rounded-bl-2xl rounded-tl-2xl bg-amber-50">
             <form onSubmit={handleSubmit} className="w-full max-w-md p-8">
@@ -126,8 +127,8 @@ export default function LoginPage() {
               </p>
             </div>
           </div>
-        </div>
+
+        </motion.div>
       </ThemeProvider>
-    </motion.div>
   );
 }

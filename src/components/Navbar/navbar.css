@@ -58,14 +58,10 @@ nav .chef-logo {
 
 nav a, nav div {
     text-decoration: none;
-    color: #f1f1f1;
     transition: color 120ms ease-in,text-shadow 200ms ease-in-out;
     z-index: 11;
 }
 
-nav a:hover {
-    text-shadow: 0 0 21px white;
-}
 nav .login a:hover {
     color: #f1f1f1;
 }

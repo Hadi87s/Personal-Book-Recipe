@@ -40,12 +40,12 @@ body {
 }
 
 .container .text h1 {
-    font-size: clamp(2.0rem,8vw,3.5rem);
+    font-size: clamp(3rem,7vw,4.7rem);
     color: #f1f1f1;
     margin: 0;
 }
 .container .text p {
-    font-size: clamp(1.2rem,3vw,1.7rem);
+    font-size: clamp(1.3rem,3vw,1.7rem);
     color: #dddddd;
 }
 

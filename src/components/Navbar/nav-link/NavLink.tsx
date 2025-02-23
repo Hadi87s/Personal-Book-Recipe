@@ -1,16 +1,17 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 interface IProps {
     to: string;
-    name:React.ReactNode;
+    children:React.ReactNode;
 }
 
-const NavLink = (props: IProps) => {
+const NavLinkloc = ({to, children}: IProps) => {
+  const location = useLocation();
   return (
     <li>
-    <Link to={props.to}>{props.name}</Link>
+    <Link className={`${location.pathname === to ? "border-b-2 rounded-b-[2px]" : ""} p-2 font-[500] text-lg hover:text-black`} to={to}>{children}</Link>
     </li>
   )
 }
 
-export default NavLink
+export default NavLinkloc

@@ -59,13 +59,15 @@ const Recipes = () => {
   }; // refactor those two functions into one :)
 
   return (
+    <>
+
+    <div className="waves"></div>
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{opacity:0, x:-70 }}
+      animate={{opacity:1, x: 0 }}
       transition={{ duration: 0.4 }}
       className="recipes-container"
     >
-      <div className="waves"></div>
       <div className="filter">
         <TextField
           type="text"
@@ -130,6 +132,7 @@ const Recipes = () => {
         ))}
       </div>
     </motion.div>
+    </>
   );
 };
 
